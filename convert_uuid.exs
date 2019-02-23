@@ -1,4 +1,5 @@
 defmodule ConvertUUID do
+  # Converts UUID bytes in little-endian format
   defp get_reverse(list, range) do
     list |> Enum.slice(range) |> Enum.reverse
   end
